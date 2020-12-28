@@ -1,5 +1,5 @@
 package de.rdvsb.mppexamplelib
 
-actual class Example actual constructor() {
-	actual val platform: String = "Platform Native mingwx64"
+public actual class Example actual constructor() {
+	public actual val platform: String = "Platform Native mingwx64"
 }
