@@ -10,8 +10,8 @@ internal class ExampleNativeTest {
 
 	@Test
 	fun getPlatform() {
-		println("nativeTest getPlatform")
-		assertTrue(example.platform.startsWith("Platform JVM"))
+		println("nativeTest getPlatform \"${example.platform}\"")
+		assertTrue(example.platform.startsWith("Platform Native"))
 	}
 }
 

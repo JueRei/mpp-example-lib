@@ -1,5 +1,5 @@
 plugins {
-	kotlin("multiplatform") version "1.4.21"
+	kotlin("multiplatform") version "1.5.21"
 	`maven-publish`
 }
 
@@ -62,6 +62,11 @@ kotlin {
 		val linuxX64Main by getting {
 			dependsOn(nativeCommon)
 		}
+
+		val linuxX64Test by getting {
+			dependsOn(nativeTest)
+		}
+
 		val mingwX64Main by getting {
 			dependsOn(nativeCommon)
 		}
